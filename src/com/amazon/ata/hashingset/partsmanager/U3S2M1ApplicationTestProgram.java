@@ -6,6 +6,8 @@ public class U3S2M1ApplicationTestProgram {
 
         public static void main(String[] args) {
 
+                // Instantiate several DevicePart Objects
+
                 System.out.println("-".repeat(50) + "\nDefining flex part...");
                 DevicePart flex = new DevicePart("Knowles", "KAS-700-0147",
                         Arrays.asList(AmazonDevice.FIRE_TV_STICK, AmazonDevice.FIRE_TV_STICK_4K, AmazonDevice.ECHO_BUDS));
@@ -54,6 +56,7 @@ public class U3S2M1ApplicationTestProgram {
                 // Instantiate a PartManager (contains HashSet)
                 PartManager microphonePartManager = new PartManager();
 
+                // Add the DevicePart objects instantiate above to the PartManager object
                 System.out.println("-".repeat(50) + "\nadding flex part to HashSet in PartManager...");
                 microphonePartManager.addDevicePart(flex);
 
@@ -71,6 +74,22 @@ public class U3S2M1ApplicationTestProgram {
 
                 System.out.println("-".repeat(50) + "\nadding wired part to HashSet in PartManager...");
                 microphonePartManager.addDevicePart(wired);
+
+                System.out.println("-".repeat(50) + "\nLooking for objects stored in PartManager...\n");
+
+                // test out find an object in the array method
+                System.out.println("Looking for: " + button);
+                DevicePart foundObject = microphonePartManager.findPart(button);
+                System.out.println("  Found for: " + foundObject);
+
+                // Instantiate an object we have not added to the ArrayList
+                DevicePart frankPart = new DevicePart("Frank", "123-456",
+                        Arrays.asList(AmazonDevice.ECHO_BUDS));
+
+                // test out find an object in the array method
+                System.out.println("\nLooking for: " + frankPart);
+                foundObject = microphonePartManager.findPart(frankPart);
+                System.out.println("  Found for: " + foundObject);  // expecting null to be returned
 
                 return;
         }
