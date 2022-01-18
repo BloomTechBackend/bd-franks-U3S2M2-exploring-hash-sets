@@ -1,32 +1,4 @@
-# [TEAM NAME] Exploring `HashSet`s GILA
-
-## GILA Roles
-
-This activity will explore how to utilize Java arrays to simultaneously eliminate duplicates and reduce the runtime
-complexity of adding, removing, and searching for elements in the array to constant, O(1), time typically.
-  
-Before you start, complete the form below to assign a role to each member.
-  
-If you have 3 people, combine the Presenter and Reflector.
-
-| Team                               | Date                |
-|:-----------------------------------|:--------------------|
-| &nbsp;                             | &nbsp;              |
-
-&nbsp;
-
-| Team Roles                         | Team Member         |
-|:-----------------------------------|:--------------------|
-| **Recorder**: records all answers and questions, provides copies to team and facilitator. |                     |
-| **Presenter**: talks to facilitator and other teams. |                     |
-| **Manager**: keeps track of time and makes sure everyone contributes appropriately. |                     |
-| **Reflector**: considers how the team could work and learn more effectively. |                     |
- 
-## PART A - `DevicePart`s
-
-|                                      | Start time: |
-|:-------------------------------------|:------------|
-| **(25 minutes) A. `DevicePart`s**    |             |
+Exploring `HashSet`s
 
 Amazon doesn’t own any manufacturing facilities, so we have contracts with other companies to build our Kindles, Echos,
 and other devices. In some cases, the manufacturer provides the parts needed; in most cases, we purchase the parts from
@@ -69,19 +41,9 @@ this class to answer the following questions:
 test these methods by running the `DevicePart` test class. When your tests are passing, check the box
 next to your role. Check with your group and see if anyone needs help.
 
-[] Recorder
-
-[] Presenter
-
-[] Manager
-
-[] Reflector
 
 ## PART B - Relating hash code value to index
 
-|                                                      | Start time: |
-|:-----------------------------------------------------|:------------|
-| **(8 minutes) B. Relating hash code value to index** |             |
 
 ```
 5 % 10 = 5
@@ -104,13 +66,7 @@ next to your role. Check with your group and see if anyone needs help.
 
 
 
-
-
 ## PART C - Adding to a `HashSet`
-
-|                                         | Start time: |
-|:----------------------------------------|:------------|
-| **(25 minutes) C. Adding to a HashSet** |             |
 
 The GPM who manages all of the microphone device parts has sent us over the manufacturer, manufacturer part number, and
 the list of devices each part is used in for every microphone they own. These are the items we will want to add to our
@@ -281,10 +237,6 @@ always be an index of the array.
 
 ## PART D - Iterating over a HashSet
 
-|                                       | Start time: |
-|:--------------------------------------|:------------|
-| **(15 minutes) D. Iterating**         |             |
-
 
 Let's try listing the contents of our `HashSet`.
 
@@ -338,9 +290,6 @@ Here is a copy of your table 2 array representation.
 
 ## PART E - `HashSet` contains
 
-|                               | Start time: |
-|:------------------------------|:------------|
-| **(15 minutes) E. Contains**  |             |
 
 1. Describe the algorithm you think `HashSet` uses to determine whether it contains a provided item or not. Here is the
 JavaDoc for `contains` method in the `Set` interface:
